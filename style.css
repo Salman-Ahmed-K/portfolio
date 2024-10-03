@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  background-color: #18181b;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+/* navigatin menu design start here*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  top: 30px;
+}
+
+.image {
+  max-width: 90px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+nav ul li {
+  padding: 5px 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: aqua;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 75%;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-family: "Poppins", "san-serif";
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: #1d4ed8;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+  cursor: pointer;
+}
+/* navigatin menu design end here*/
+
+/* header section design start here*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+/* header section design end here*/
+
+/* feature section design start here*/
+section {
+  padding: 20px 70px;
+}
+.feature-section h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 1rem;
+}
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5rem;
+}
+.feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.feature .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.feature .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+.feature .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.feature .card a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.card a:hover {
+  color: #1d4ed8;
+}
+.icons {
+  max-width: 50px;
+  overflow: hidden;
+  display: inline-block;
+  background: #1d4ed8;
+  padding: 5px;
+  border-radius: 3px;
+}
+.icons .icon {
+  font-size: 2.3rem;
+}
+
+.icons svg {
+  width: 2.3rem;
+  background-color: #1d4ed8;
+}
+
+/* feature section design ends here*/
+/* Pricing section design starts here*/
+.pricing {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5rem;
+}
+.pricing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.pricing > p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+.pricing > h1,
+.pricing > p {
+  text-align: center;
+}
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  flex: 1;
+  padding: 0 rem;
+}
+.plans .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #27272a;
+  border: 2px solid transparent;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  flex: 1;
+  transition: all 0.4s ease-in-out;
+}
+.plans .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+.plans .card .content {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+.plans .card .content h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.plans .card .content h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px dashed #fff;
+}
+.plans .card .content p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+}
+.plans .card button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  padding: 0.5rem 0.3rem;
+}
+.plans .card button:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+/* Pricing section design ends here*/
+/*Footer section design starts here*/
+footer {
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  padding: 1rem 3rem;
+}
+
+footer .blocks .social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .blocks .social a {
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+footer .blocks .social a:hover {
+  color: #fff;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+footer h2 {
+  font-weight: 300;
+  position: relative;
+  cursor: pointer;
+}
+footer h2::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: aqua;
+  transition: all 0.4s ease;
+}
+footer h2:hover::after {
+  width: 30%;
+  cursor: pointer;
+}
+
+footer h4 {
+  color: #ccc;
+  font-weight: 200;
+  cursor: pointer;
+}
+.copyright {
+  max-width: 1200px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.7rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  margin-top: 5rem;
+}
+/*Footer section design ends here*/
+
+/*Responsive Design Starts Here*/
+@media (width < 920px) {
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    flex: 1;
+    padding: 0 rem;
+  }
+  .pricing {
+    padding: 5rem;
+  }
+}
+/*Responsive Design Ends Here*/
